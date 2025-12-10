@@ -7,10 +7,9 @@ public abstract class Dispositivo {
     protected String nome;
     protected ModoOperacao modo;
 
-    // MUDANÇA: O construtor agora EXIGE o modo inicial
     public Dispositivo(String nome, ModoOperacao modoInicial) {
         this.nome = nome;
-        this.modo = modoInicial; // Sem valor default hardcoded
+        this.modo = modoInicial;
     }
 
     public void setModo(ModoOperacao modo) {
